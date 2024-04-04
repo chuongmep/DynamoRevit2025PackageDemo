@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RevitVersion>2025</RevitVersion>
+        <DynVersion>3.0</DynVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Chuongmep.Revit.Api.RevitAPI" Version="$(RevitVersion).*">
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+        <PackageReference Include="Chuongmep.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*">
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+        <PackageReference Include="DynamoVisualProgramming.Revit" Version="$(DynVersion).*">
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+        <PackageReference Include="DynamoVisualProgramming.Core" Version="$(DynVersion).*">
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+        <PackageReference Include="DynamoVisualProgramming.DynamoCoreNodes" Version="$(DynVersion).*">
+            <ExcludeAssets>runtime</ExcludeAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>
